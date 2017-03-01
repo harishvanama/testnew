@@ -13,7 +13,49 @@
             </resource>
             <resource>
                 <filtering>true</filtering>
+                <directory>services/FileService/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
+                <directory>services/MyJavaService/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
+                <directory>services/freegeoip/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
+                <directory>services/googleapis/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
+                <directory>services/hrdb/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
                 <directory>services/securityService/src</directory>
+                <excludes>
+                    <exclude>**/*.java</exclude>
+                </excludes>
+            </resource>
+            <resource>
+                <filtering>true</filtering>
+                <directory>services/websocket/src</directory>
                 <excludes>
                     <exclude>**/*.java</exclude>
                 </excludes>
@@ -96,7 +138,14 @@
                         </goals>
                         <configuration>
                             <sources>
+                            
+                                <source>services/FileService/src</source>
+                                <source>services/MyJavaService/src</source>
+                                <source>services/freegeoip/src</source>
+                                <source>services/googleapis/src</source>
+                                <source>services/hrdb/src</source>
                                 <source>services/securityService/src</source>
+                                <source>services/websocket/src</source>
                             </sources>
                         </configuration>
                     </execution>
@@ -273,6 +322,11 @@
             <version>2.5</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>org.hsqldb</groupId>
+            <artifactId>hsqldb</artifactId>
+            <version>2.3.3</version>
+        </dependency>
     </dependencies>
     <dependencyManagement>
         <dependencies>
@@ -303,6 +357,6 @@
         <profile.props.file>development.properties</profile.props.file>
         <spring.version>4.2.0.RELEASE</spring.version>
         <spring.security.version>4.1.2.RELEASE</spring.security.version>
-        <wavemaker.studio.version>8.4.1.2755</wavemaker.studio.version>
+        <wavemaker.studio.version>8.4.1.2760</wavemaker.studio.version>
     </properties>
 </project>

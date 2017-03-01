@@ -1,0 +1,18 @@
+{
+  "endpointAddress" : "https://freegeoip.net/json/",
+  "method" : "GET",
+  "requestBody" : "",
+  "headers" : { },
+  "queryParams" : { },
+  "sampleHttpResponseDetails" : {
+    "responseBody" : "{\"ip\":\"14.141.6.170\",\"country_code\":\"IN\",\"country_name\":\"India\",\"region_code\":\"KA\",\"region_name\":\"Karnataka\",\"city\":\"Mysore\",\"zip_code\":\"570030\",\"time_zone\":\"Asia/Kolkata\",\"latitude\":12.3072,\"longitude\":76.6497,\"metro_code\":0}",
+    "convertedResponse" : null,
+    "statusCode" : 0,
+    "headers" : { }
+  },
+  "redirectEnabled" : true,
+  "proxy" : null,
+  "authType" : "NONE",
+  "contentType" : "text/xml",
+  "multiParamInfoList" : null
+}

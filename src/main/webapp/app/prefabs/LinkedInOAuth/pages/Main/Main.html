@@ -1,0 +1,8 @@
+<wm-page ng-controller="LinkedInOAuthController" name="page1">
+    <wm-content name="view1">
+        <wm-button ng-class="buttonclass" caption="bind:buttoncaption" type="button" name="signInButton"
+                   on-click="Variables.OAuthHandlerServiceGetLoginURL.invoke()" iconclass="fa fa-linkedin-square"
+                   show="true" class="linkedin-login-btn">
+        </wm-button>
+    </wm-content>
+</wm-page>

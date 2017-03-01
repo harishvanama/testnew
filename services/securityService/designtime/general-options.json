@@ -1,5 +1,5 @@
 {
-  "enforceSecurity" : false,
+  "enforceSecurity" : true,
   "rememberMeConfig" : null,
   "sslConfig" : {
     "sslPort" : 443,
@@ -7,14 +7,14 @@
     "excludedUrls" : null
   },
   "xssConfig" : {
-    "enforceXssSecurity" : false,
+    "enforceXssSecurity" : true,
     "policyFile" : "wm-xss-policies.xml",
-    "xssFilterStrategy" : "NONE",
-    "policyType" : null
+    "xssFilterStrategy" : "ENCODE",
+    "policyType" : "IMPORT"
   },
   "csrfConfig" : {
-    "enforceCsrfSecurity" : false,
-    "headerName" : "X-WM-XSRF-TOKEN"
+    "enforceCsrfSecurity" : true,
+    "headerName" : "test"
   },
   "authProviders" : [ "DEMO" ],
   "login" : {
